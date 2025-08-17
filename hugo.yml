@@ -31,14 +31,8 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
+        - name: CWharton
+          url: https://www.cwharton.com
           weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
