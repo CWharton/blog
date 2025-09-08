@@ -4,7 +4,7 @@ draft = false
 title = 'Disable/Enable Windows Lock Screen (Windows + L)'
 +++
 
-Although Windows is not my primary operating system, I do need to use it in order to get my day job done. Therefore I run Windows in a VirtualBox VM. A good habit to have, and I often use is to lock my computer whenever I walk away from it. Unfortunately, this can have some unexpected effects on some desktops. When the focus is on the VM and using the hotkeys (Windows + L) the VM will lock leaving the workstation unlocked. A quick web search didn't reveal the correct solution so I figured I would post it.
+Although Windows is not my primary operating system, I do need to use it in order to get my day job done. Therefore I run Windows in a VirtualBox VM. A good habit to have, and I often use is to lock my computer whenever I walk away from it. Unfortunately, this can have some unexpected effects on some desktops. When the focus is on the VM and using the hotkeys (Windows + L) the VM will lock leaving the workstation unlocked. A quick web search didn't reveal the correct solution so I figured I would post it..
 
 ## Registry Edit
 
