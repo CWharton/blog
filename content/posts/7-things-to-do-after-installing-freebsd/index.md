@@ -4,7 +4,7 @@ draft = false
 title = '7 Things to Do After Installing FreeBSD'
 +++
 
-[![FreeBSD](FREEBSD_Logo_Horiz_Pos_RGB.png)](/blog/post/7-things-to-do-after-installing-freebsd/)
+[![FreeBSD](FREEBSD_Logo_Horiz_Pos_RGB.png)](/posts/7-things-to-do-after-installing-freebsd/)
 
 If you are unfamiliar with FreeBSD, it is an operating system for your PC, server, or embedded system that is free and open source.
 
@@ -54,7 +54,7 @@ vidcontrol MODE_280
 
 Replaces the mode number with the one you selected. MODE_280 with changing your resolution to 1024X768 which works perfectly for me.
 
-In order to maintain your resolution after a reboot, add your mode to */etc/rc.conf*.
+In order to maintain your resolution after a reboot, add your mode to _/etc/rc.conf_.
 
 ```
 echo allscreens_flags="MODE_280" >> /etc/rc.conf
@@ -64,19 +64,19 @@ echo allscreens_flags="MODE_280" >> /etc/rc.conf
 
 FreeBSD has two ways to install software, ports, or packages.
 
-Ports allow you to compile from source code. This allows you to be secure and optimize for your system. To get started with the ports collection you can use the *portsnap* command.
+Ports allow you to compile from source code. This allows you to be secure and optimize for your system. To get started with the ports collection you can use the _portsnap_ command.
 
 ```
 portsnap fetch extract
 ```
 
-The *fetch* command will download a compressed snapshot of the Ports Collection and *extract* will uncompress and dump it in */usr/ports* directory. Once this is done you can locate the program directory you want to install and type:
+The _fetch_ command will download a compressed snapshot of the Ports Collection and _extract_ will uncompress and dump it in _/usr/ports_ directory. Once this is done you can locate the program directory you want to install and type:
 
 ```
 make install clean
 ```
 
-Packages are pre-compiled binaries, so they are fast and easy to install. Usually, packages are the preferred method to install applications on your computer. For the rest of this article, we will be using the *pkg* command to install packages. Installing packages is easy to use.
+Packages are pre-compiled binaries, so they are fast and easy to install. Usually, packages are the preferred method to install applications on your computer. For the rest of this article, we will be using the _pkg_ command to install packages. Installing packages is easy to use.
 
 ```
 pkg install
@@ -88,7 +88,7 @@ To search for packages.
 pkg search
 ```
 
-to upgrade installed packages.
+To upgrade installed packages.
 
 ```
 pkg upgrade
@@ -104,9 +104,9 @@ For more detail refer to the [FreeBSD Handbook on Installing Applications](https
 
 ## 5. Setup sudo
 
-If you are coming from the Linux or Mac world you are probably familiar with the *sudo* command. By default, FreeBSD is stripped down and does not have *sudo* installed.
+If you are coming from the Linux or Mac world you are probably familiar with the _sudo_ command. By default, FreeBSD is stripped down and does not have _sudo_ installed.
 
-For those unfamiliar with *sudo* it is a program that allows a user to have elevated privileges for a command.
+For those unfamiliar with _sudo_ it is a program that allows a user to have elevated privileges for a command.
 
 ```
 pkg install sudo
@@ -114,7 +114,7 @@ pkg install sudo
 
 ![Install sudo](installing_freebsd_install_sudo.png)
 
-Now open */usr/local/etc/sudoers* as root in your favorite text editor and uncomment the line:
+Now open _/usr/local/etc/sudoers_ as root in your favorite text editor and uncomment the line:
 
 ```
 %wheel ALL=(ALL) ALL
@@ -138,7 +138,7 @@ chsh -s /usr/local/bin/zsh
 
 7. Stay current
 
-----------------
+---
 
 Now that you are all set up and ready to go with your new FreeBSD install it is god to keep up to date on the current FreeBSD news. Below I will list a few good sources to keep yourself current.
 
@@ -146,7 +146,7 @@ Now that you are all set up and ready to go with your new FreeBSD install it is 
 
 - **[BSD Magazine](http://bsdmag.org)** - A monthly publication for beginners and professionals that requires free membership to download a PDF or epub.
 
-- **[FreeBSD Journal](https://www.freebsdfoundation.org/journal)** - Another magazine put together by [FreeBSD Foundation](<https://www.freebsdfoundation.org/>). No free buy well worth the money in order to support the community.
+- **[FreeBSD Journal](https://www.freebsdfoundation.org/journal)** - Another magazine put together by [FreeBSD Foundation](https://www.freebsdfoundation.org/). No free buy well worth the money in order to support the community.
 
 - **[FreeBSD News](https://www.freebsdnews.com/)** - FreeBSD News
 
